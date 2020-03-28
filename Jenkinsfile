@@ -8,11 +8,11 @@ stages{
 }
   stage('branch'){
     when {
-      expression { BRANCH_NAME ==~ /feature\/[0-9]+\.[0-9]+\.[0-9]+/ }
+      expression { BRANCH_NAME ==~ /[0-9]+\.[0-9]+\.x+/ }
           
         }
     steps{
-    echo "You're in future branch"
+    echo "You're in X branch"
   }
 }
 }}
