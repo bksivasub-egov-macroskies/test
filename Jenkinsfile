@@ -12,7 +12,7 @@ stages{
           
         }
     steps{
-    echo "You're in X branch"
+    echo "You're in X.some branch"
   }
 }
 }}
