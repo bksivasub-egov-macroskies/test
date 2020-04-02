@@ -8,7 +8,7 @@ stages{
 }
   stage('branch'){
     when {
-      expression { BRANCH_NAME ==~ /[0-9]+\.[0-9]+\.x+/ }
+      expression { BRANCH_NAME ==~ /[0-9]+\.[0-9]+\.x*+/ }
           
         }
     steps{
